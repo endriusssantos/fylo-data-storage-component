@@ -1,0 +1,147 @@
+body {
+    background: url(../images/bg-desktop.png) no-repeat bottom / contain;
+    background-color: hsl(229, 57%, 11%);
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 50px;
+    transform: translateY(-45%);
+}
+
+.container .fylo-card {
+    background-color: hsl(228, 56%, 26%);
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.container .fylo-card .logo {
+    width: 130px;
+    margin: 20px 0 0 40px;
+}
+
+.container .fylo-card .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.container .fylo-card .icons .btn {
+    margin: 40px 0 30px 0px;
+    background-color: hsl(229, 57%, 11%);
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .fylo-card .icons .btn:hover {
+    opacity: 0.5;
+}
+
+.container .fylo-card .icons .btn.document {
+    margin-left: 40px;
+}
+
+.container .fylo-card .icons .btn .image,
+.container .fylo-card .icons .btn.document .image {
+    width: 20px;
+}
+
+.container .storage-card {
+    background-color: hsl(228, 56%, 26%);
+    height: 150px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .storage-card .storage-used {
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+    margin: 0 0 60px 40px;
+    position: absolute;
+}
+
+.container .storage-card .storage-left {
+    background-color: hsl(243, 100%, 93%);
+    width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    position: relative;
+    top: -25px;
+    left: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .storage-card .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 30px solid hsl(243, 100%, 93%);
+    position: relative;
+    top: -35px;
+    left: 458px;
+    transform: translateX(-50%);
+}
+
+.container .storage-card .storage-left .number-left {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container .storage-card .storage-left .gb-left {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.container .storage-card .storage-bar {
+    background-color: hsl(229, 57%, 11%);
+    max-width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0px 40px;
+}
+
+.container .storage-card .storage-bar .progress-bar {
+    background: linear-gradient(45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    max-width: 70%;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container .storage-card .storage-bar .progress-bar .circle {
+    background-color: hsl(243, 100%, 93%);
+    width: 5%;
+    height: 15px;
+    border-radius: 100%;
+    margin-left: 277px;
+}
+
+.container .storage-card .gb {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px 30px;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+}

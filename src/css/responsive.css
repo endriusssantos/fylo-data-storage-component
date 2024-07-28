@@ -1,0 +1,53 @@
+@media (max-width: 425px) {
+    body {
+        background: url(../images/bg-mobile.png) no-repeat top / cover;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0%);
+    }
+
+    .container .fylo-card .icons {
+        gap: 15px;
+    }
+
+    .container .fylo-card .icons .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container .fylo-card .icons .btn .image {
+        width: 24px;
+    }
+
+    .container .storage-card {
+        width: 350px;
+        height: 170px;
+    }
+
+    .container .storage-card .storage-used {
+        margin: 0 0 80px 60px;
+    }
+
+    .container .storage-card .storage-left {
+        height: 60px;
+        top: 130px;
+        left: 100px;
+    }
+
+    .container .storage-card .triangle {
+        display: none;
+    }
+
+    .container .storage-card .storage-bar .progress-bar .circle {
+        width: 8%;
+        margin-left: 172px;
+    }
+
+    .container .storage-card .gb {
+        margin: 10px 40px 50px;
+    }
+}
